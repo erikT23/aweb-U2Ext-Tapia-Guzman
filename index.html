@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Pongame AU</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="medico">Medico:</label>
+                    <br>
+                    <input id="medico" name="medico" type="form-control" type="text">
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label for="cedula">Cedula Profesional:</label>
+                    <br>
+                    <input id="cedula" name="cedula" type="text">
+
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label for="paciente">Paciente:</label>
+                    <br>
+                    <input id="paciente" name="paciente" type="text">
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label for="fecha">Fecha Receta:</label>
+                    <br>
+                    <input id="fecha" name="fecha" type="date">
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label for="fecha2">Fecha Expedicion Receta:</label>
+                    <br>
+                    <input id="fecha2" name="fecha2" type="date">
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label for="medicamento">Medicamento Entregado:</label>
+                    <br>
+                    <textarea id="medicamento" name="medicamento" type="text" cols="30" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+
+                    <button id="agregar" name="agregar" class="btn btn-primary" onclick="agregarNota()">Agregar</button>
+
+                    <button id="borrar" name="borrar" class="btn btn-danger" onclick="Borrar()">Borrar</button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-8 ">
+                <div class="container-fluid" >
+                    <div class="bg-warning" id="recetas">
+
+                    </div>
+                    
+                    <!-- <div class="row float-right">
+                        <div class="col-md-7 bg-info">Fecha Recetas:</div>
+
+                        <div class="col-md-5 bg-primary" id="fechar1">2021-08-11</div>
+                    </div>
+                    <br>
+                    <div class="row bg-primary">
+                        <div class="col-md-1" id="nombrer">
+                            erik
+                        </div>
+                        <div class="col-md-9 text-right">Cedula:</div>
+                        <div class="col-md-2" id="cedular">1323-05</div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-2 text-right">Paciente:</div>
+                        <div class="col-md-8 " id="pacientr">dulce</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 text-right">Fecha exp:</div>
+                        <div class="col-md-8" id="fechar2">15/1/79</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
